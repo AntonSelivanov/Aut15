@@ -1,6 +1,6 @@
 function [lambdaP,gap]=LMI_Aut15_th1(Ai,B,C,g,kStar,h,Mstar,M1)
 % This MATLAB program checks the feasibility of LMIs from Theorem 1 of the paper 
-% A. Selivanov, E. Fridman, and A. Fradkov, "Passification-based adaptive control: Uncertain input and output delays," Automatica, vol. 54, pp. 107–113, 2015.
+% A. Selivanov, E. Fridman, and A. Fradkov, "Passification-based adaptive control: Uncertain input and output delays," Automatica, vol. 54, pp. 107â€“113, 2015.
 
 % The program uses YALMIP parser (http://users.isy.liu.se/johanl/yalmip/)
 % and SeDuMi solver (http://sedumi.ie.lehigh.edu/)
@@ -10,7 +10,7 @@ function [lambdaP,gap]=LMI_Aut15_th1(Ai,B,C,g,kStar,h,Mstar,M1)
 % B,C       - the parameters of the system (3); 
 % g         - the vector from Assumption 2; 
 % kStar     - the nominal controller gain from (1); 
-% Mstar, M1 - the controller gain bound from (13). 
+% Mstar, M1 - the controller gain bounds from (13). 
 
 % Output: 
 % lambdaP   - the minimum eigenvalue of P; 
