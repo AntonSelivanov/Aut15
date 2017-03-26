@@ -74,9 +74,9 @@ lambdaP=[];
 if sol.problem==0
     primal=check(LMIs); 
     if min(primal(1:end-1))>=0 && min(primal(1:end-4))>0
-        lambdaP=min(eig(double(P))); 
-        gap=max(abs(double(P)*B-C'*g)); 
+        lambdaP=min(eig(value(P))); 
+        gap=max(abs(value(P)*B-C'*g)); 
     end
 else
-    yalmiperror(sol.problem); 
+    yalmiperror(sol.problem) 
 end
